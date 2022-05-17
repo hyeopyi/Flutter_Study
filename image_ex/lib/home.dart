@@ -6,6 +6,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text('Image Test'),
@@ -27,7 +28,6 @@ class Home extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Image.asset('images/pikachu-2.jpg'),
               ),
-       
             ],
           )
         ),

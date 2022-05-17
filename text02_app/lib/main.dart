@@ -22,6 +22,7 @@ class H extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
         title:  const Text('Text with Coulmn and Row'),
       ),
