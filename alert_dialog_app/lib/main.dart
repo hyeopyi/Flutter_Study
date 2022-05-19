@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
 // -- Functions
 _showDialog(BuildContext context) {
   showDialog(
-    barrierDismissible: false,
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext ctx) {
         return AlertDialog(
@@ -50,14 +50,12 @@ _showDialog(BuildContext context) {
           content: const Text('Hellow World를 Touch\n했습니다'),
           actions: [
             TextButton(
-              onPressed: (){
+              onPressed: () {
                 Navigator.of(ctx).pop();
               },
-            child: const Text('종료'),
+              child: const Text('종료'),
             ),
           ],
         );
       });
-
-  }
- 
+}
