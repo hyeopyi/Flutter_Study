@@ -42,20 +42,13 @@ class _SecondPageState extends State<SecondPage> {
 
     if (dbmi < 18.5) {
       path = 'images/under_18_5.png';
-    }
-     if (dbmi >= 18.5) {
+    }else if(dbmi >= 18.5) {
       path = 'images/under_24_9.png';
-    }
-
-     if (dbmi >= 25) {
+    }else if (dbmi >= 25) {
       path = 'images/under_29_9.png';
-    }
-    
-    if (dbmi >= 30) {
+    } else if (dbmi >= 30) {
       path = 'images/under_34_9.png';
-    }
-
-    if (dbmi >= 35) {
+    }else if(dbmi >= 35) {
       path = 'images/under_35.png';
     }
 
