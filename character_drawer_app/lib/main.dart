@@ -44,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
 
     Timer.periodic(const Duration(seconds: 1), (Timer timer) {
+      // 등록만 initState에 한다, 주기등은 변경가능
       changeString();
     });
   }
@@ -62,9 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 character,
                 style:
                     const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                    
               ),
-              
             ],
           ),
         ),
@@ -120,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       } else {
                         Navigator.pop(context);
                         setState(() {
-                          character = "";                          
+                          character = "";
                         });
                         str = dispStr.text.split('');
                         currentStr = 0;
@@ -151,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   errorSnackBar(BuildContext context) {
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-      content: Text('광고를 입력하세요'),
+      content: Text('광고 문구를 입력해주세요'),
       duration: Duration(seconds: 2),
       backgroundColor: Colors.red,
     ));

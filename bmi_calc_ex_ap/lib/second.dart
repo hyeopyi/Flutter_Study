@@ -40,23 +40,17 @@ class _SecondPageState extends State<SecondPage> {
   String imagePath() {
     String path = "";
 
-    if (dbmi < 18.5) {
-      path = 'images/under_18_5';
-    }
-    if(dbmi >= 18.5) {
-      path = 'images/under_24_9.png';
-    }
-    if (dbmi >= 25) {
-      path = 'images/under_29_9.png';
-    }
-    if (dbmi >= 30) {
-      path = 'images/under_34_9.png';
-    }
     if(dbmi >= 35) {
       path = 'images/under_35.png';
+    }else if (dbmi >= 30) {
+      path = 'images/under_34_9.png';
+    }else if (dbmi >= 25) {
+      path = 'images/under_29_9.png';
+    }else if(dbmi >= 18.5) {
+      path = 'images/under_24_9.png';
+    }else{
+      path = 'images/under_18_5.png';
     }
-
-    print(dbmi);
 
     return path;
   }

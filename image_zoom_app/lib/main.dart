@@ -37,10 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
   late String _lampSizeStatus; // Image Size Status
 
   @override
-  void initState() {
+  void initState() {  // 화면이 뜨기전에 세팅되는 부분
     super.initState();
     _lampImage = 'images/lamp_on.png';
-    _lampWidth = 150;
+    _lampWidth = 150; // 그림 사이지는 double 형
     _lampHeight = 300;
     _buttonName = 'Image 확대';
     _switch = true;
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(  // 컬러값을 못준다. container만 컬러값을 줄수있다
               width: 350,
               height: 650,
-              child: Column( // 컬럼을 넣어야 child가 children으로 변경되어 사이즈 조절가능
+              child: Column( // child일 경우 모든 권한을 가고 있어 크기 변경 불가능, 컬럼을 넣어야 child가 children으로 변경되어 사이즈 조절가능
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset( // child는 모든 권환을 다 가지고 있어 확대 축소가 안된다
@@ -105,6 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  // --- Functions ---
+  
   decisionOnOff() {
     if (_switch) {
       _lampImage = 'images/lamp_on.png';
