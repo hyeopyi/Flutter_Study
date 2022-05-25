@@ -22,7 +22,7 @@ class Second4 extends StatelessWidget {
                       fontWeight: FontWeight.bold,
             )),
             Image.asset(
-                'images/smile.png',
+                'images/4/smile.png',
                 width: 80,
                 height: 80,
               ),

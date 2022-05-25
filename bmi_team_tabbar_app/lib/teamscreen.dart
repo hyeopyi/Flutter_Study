@@ -1,6 +1,8 @@
 
 import 'package:bmi_team_tabbar_app/1/startPage.dart';
 import 'package:bmi_team_tabbar_app/2/main2.dart';
+import 'package:bmi_team_tabbar_app/3/home.dart';
+import 'package:bmi_team_tabbar_app/4/screen4.dart';
 import 'package:bmi_team_tabbar_app/5/first.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +21,7 @@ class _TeamScreenState extends State<TeamScreen>
   @override
   void initState() {
     // 앱이 시작시 실행
-    controller = TabController(length: 3, vsync: this);
+    controller = TabController(length: 5, vsync: this);
     super.initState();
   }
 
@@ -40,7 +42,7 @@ class _TeamScreenState extends State<TeamScreen>
       // ),
       body: TabBarView(
         controller: controller,
-        children: const [StartPage(), MyHomePage(), FirstPage()],
+        children: const [StartPage(), MyHomePage(), FirstPage(), Home(), First4()],
       ),
       bottomNavigationBar: Container(
         color: Colors.yellowAccent,
@@ -70,6 +72,20 @@ class _TeamScreenState extends State<TeamScreen>
                 color: Colors.red,
               ),
               text: "3",
+            ),
+                Tab(
+              icon: Icon(
+                Icons.looks_4,
+                color: Colors.blue,
+              ),
+              text: "4",
+            ),
+                   Tab(
+              icon: Icon(
+                Icons.looks_5,
+                color: Colors.purple,
+              ),
+              text: "5",
             ),
 
           ],

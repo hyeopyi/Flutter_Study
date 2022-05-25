@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Row(
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
             Padding(
               padding: const EdgeInsets.fromLTRB(0,50,0,50),
               child: Image.asset(
-                'images/hamburger.jpg',
+                'images/3/hamburger.jpg',
                 height: 400,
                 width: 450,
                 fit: BoxFit.fill,

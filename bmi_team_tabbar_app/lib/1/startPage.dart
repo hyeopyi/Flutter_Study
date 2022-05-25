@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class StartPage extends StatefulWidget {
@@ -14,7 +12,7 @@ class _StartPageState extends State<StartPage> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, "calPage");
+        Navigator.pushNamed(context, "/calPage");
       },
       child: Scaffold(
         body: Center(

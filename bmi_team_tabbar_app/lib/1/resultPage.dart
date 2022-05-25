@@ -17,7 +17,7 @@ class _ResultPageState extends State<ResultPage> {
   String bmi = "";
   String advice = "";
   Color tcol = Colors.black;
-  String showImg = "images/question.jpg";
+  String showImg = "images/1/question.jpg";
 
   @override
   Widget build(BuildContext context) {

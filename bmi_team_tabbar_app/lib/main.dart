@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/' :(context) => const TeamScreen(),
         "startPage" :(context) => const StartPage(),
-        "calPage" :(context) => const CalPage(),
+        "/calPage" :(context) => const CalPage(),
         "resultPage" :(context) => const ResultPage(),
         '/2' :(context) => const MyHomePage(),
         '/5_1' :(context) => const FirstPage(),
