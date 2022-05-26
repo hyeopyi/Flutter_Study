@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage>
       // ),
       body: TabBarView(
         controller: controller,
-        children: const [FirstPage(),SecondPage()],
+        children: const [FirstPage(), SecondPage()],
       ),
       bottomNavigationBar: Container(
         color: Colors.yellowAccent,
@@ -80,9 +80,8 @@ class _MyHomePageState extends State<MyHomePage>
               ),
               text: "Two",
             )
-
           ],
-          ),
+        ),
       ),
     );
   }
