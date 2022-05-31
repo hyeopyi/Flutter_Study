@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http; // 별칭설정을 해줘야 한다
+import 'package:http/http.dart' as http; // alias 설정을 해줘야 한다
 
 void main() {
   runApp(const MyApp());
